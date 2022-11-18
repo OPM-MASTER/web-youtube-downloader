@@ -14,7 +14,7 @@ COPY src src
 RUN npm install
 RUN npm run build
 
-FROM node:lts-alpine
+FROM node:16.13.0
 
 RUN mkdir /app
 WORKDIR /app
